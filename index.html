@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rohan Murmu</title>
   </head>
@@ -11,89 +15,50 @@
     <body>
       <!-- Landing Section -->
       <div class="landing-container">
-        <div class="landing-text" data-fill="HEY">HEY</div>
-        <div class="landing-text" data-fill="THIS IS">THIS IS</div>
-        <div class="landing-text" data-fill="ROHAN">ROHAN</div>
-        <div class="landing-text" data-fill="MURMU">MURMU</div>
+        <div>
+          <div class="landing-text">hey</div>
+          <div class="landing-text">this is</div>
+          <div class="landing-text">
+            <div class="name-text" data-value="ROHAN MURMU">rohan murmu</div>
+          </div>
+        </div>
+        <div class="sub-landing-text">
+          <span class="intro"></span>
+          <span class="year"></span>
+        </div>
       </div>
+
+      <!-- Scroller Text -->
 
       <section class="spacer">
         <h1 id="scrollingText">
-          FRONTEND BACKEND MOBILE DEVELOPMENT UI/UX DESIGNER
+          frontend backend mobile development ui/ux design
         </h1>
       </section>
 
-      <div class="scroller">
-        <div class="about-container left">
-          <div class="panel first">
-            FRONTEND BACKEND MOBILE DEVELOPMENT UI/UX
-          </div>
-          <div class="panel second">
-            FRONTEND BACKEND MOBILE DEVELOPMENT UI/UX
+      <!-- About Section -->
+
+      <section class="about-container"></section>
+
+      <!-- Project Section -->
+
+      <div class="project-container">
+        <h1 class="project-text">design code develop</h1>
+        <div class="panel">
+          <div class="panel-item-content-main">
+            <h1>projects</h1>
           </div>
         </div>
       </div>
-      <div class="cards">
-        <div class="card card-1"><h2>01</h2></div>
-        <div class="card card-2"><h2>02</h2></div>
-        <div class="card card-3"><h2>03</h2></div>
-      </div>
-      <footer>
-        <section id="contact">
-          <div class="contact-box">
-            <div class="contact-links">
-              <h2 class="contact-title">CONTACT</h2>
-              <div class="links">
-                <div class="link">
-                  <a
-                    ><img
-                      src="https://i.postimg.cc/m2mg2Hjm/linkedin.png"
-                      alt="linkedin"
-                  /></a>
-                </div>
-                <div class="link">
-                  <a
-                    ><img
-                      src="https://i.postimg.cc/YCV2QBJg/github.png"
-                      alt="github"
-                  /></a>
-                </div>
-                <div class="link">
-                  <a
-                    ><img
-                      src="https://i.postimg.cc/W4Znvrry/codepen.png"
-                      alt="codepen"
-                  /></a>
-                </div>
-                <div class="link">
-                  <a
-                    ><img
-                      src="https://i.postimg.cc/NjLfyjPB/email.png"
-                      alt="email"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="contact-form-wrapper">
-              <form>
-                <div class="form-item">
-                  <input type="text" name="sender" required />
-                  <label>Name:</label>
-                </div>
-                <div class="form-item">
-                  <input type="text" name="email" required />
-                  <label>Email:</label>
-                </div>
-                <div class="form-item">
-                  <textarea class="" name="message" required></textarea>
-                  <label>Message:</label>
-                </div>
-                <button class="submit-btn">Send</button>
-              </form>
-            </div>
+
+      <!-- Contact -->
+
+      <div class="landing-container">
+        <div>
+            <div class="name-text" data-value="ROHAN MURMU">contact me</div>
           </div>
-        </section>
-      </footer>
+        </div>
+      </div>
 
       <!-- Loading Screen -->
 

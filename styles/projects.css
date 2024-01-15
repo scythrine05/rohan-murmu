@@ -1,0 +1,150 @@
+
+/* .cards {
+  height: 70vh;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  margin: 10px 10px;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 30vh;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.card-1 {
+  left: 0;
+  top: 0;
+}
+
+.card-2 {
+  left: 35px;
+  top: 35px;
+}
+
+.card-3 {
+  left: 70px;
+  top: 70px;
+} */
+
+.project-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  .items {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    display: flex;
+    padding: 0.25em 0.25em;
+    cursor: pointer;
+  }
+  
+  .item-index {
+    flex: 1;
+  }
+  
+  .item-name {
+    flex: 4;
+  }
+  
+  .item-year {
+    flex: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: -1200px;
+    right: 0;
+    width: 70%;
+    height: 700px;
+    padding: 2em;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 2;
+    will-change: bottom;
+    transform: translateZ(0) rotate(20deg);
+    transform-origin: bottom center;
+  }
+  
+  .overlay::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .img-container {
+    width: 100%;
+    padding-bottom: 2em;
+  }
+  
+  .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2em 0;
+  }
+  
+  .col:nth-child(1) {
+    flex: 3;
+  }
+  
+  .col:nth-child(2) {
+    flex: 2;
+  }
+  
+  #close-btn {
+    cursor: pointer;
+    opacity: 0.4;
+  }
+  
+  .item-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 4em 0;
+  }
+  
+  .item-details p:nth-child(1) {
+    flex: 3;
+  }
+  
+  .item-details p:nth-child(2) {
+    flex: 2;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .items {
+      width: 100%;
+      bottom: 8em;
+    }
+    .overlay {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+  
