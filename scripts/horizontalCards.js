@@ -1,10 +1,8 @@
 import { gsap } from "gsap";
 
-
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 function AddCards() {
   const newCard = `<div class="panel">
@@ -24,7 +22,7 @@ function AddCards() {
     typesetting industry.
     </p>
     <div class="panel-icons">
-    <i class="bi bi-github" style="font-size:24px;"></i>
+    <i class="bi bi-github"></i>
     </div>
     </div>
     <img
@@ -44,31 +42,33 @@ const project_container = document.querySelector(".project-container");
 
 AddCards();
 
-let tl = gsap.timeline({
-  scrollTrigger: {
-    pin: true,
-    scrub: 1,
-    trigger: project_container,
-    end: () =>
-      project_container.scrollWidth - document.documentElement.clientWidth,
-  },
-  defaults: { ease: "none", duration: 1 },
-});
+if (window.innerWidth >= 725) {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      pin: true,
+      scrub: 1,
+      trigger: project_container,
+      end: () =>
+        project_container.scrollWidth - document.documentElement.clientWidth,
+    },
+    defaults: { ease: "none", duration: 1 },
+  });
 
-tl.to(
-  ".panel",
-  {
-    x: () =>
-      -(project_container.scrollWidth - document.documentElement.clientWidth),
-  },
-  0
-);
+  tl.to(
+    ".panel",
+    {
+      x: () =>
+        -(project_container.scrollWidth - document.documentElement.clientWidth),
+    },
+    0
+  );
 
-tl.to(
-  ".project-text",
-  {
-    x: () =>
-      project_container.scrollWidth - document.documentElement.clientWidth,
-  },
-  0
-);
+  tl.to(
+    ".project-text",
+    {
+      x: () =>
+        project_container.scrollWidth - document.documentElement.clientWidth,
+    },
+    0
+  );
+}
