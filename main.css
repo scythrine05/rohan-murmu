@@ -150,6 +150,7 @@ a {
   position: relative;
   margin: 0 2em;
   transition: 0.3s;
+  border: 2px dotted #fff;
 }
 
 .panel-item-content-main h1 {
@@ -194,11 +195,11 @@ a {
 }
 
 .panel-text h1 {
-  font-size: 7vh;
+  font-size: 2.5rem;
 }
 
 .panel-text p {
-  font-size: 2vh;
+  font-size: 0.8rem;
 }
 
 .panel:nth-of-type(even) .panel-item .panel-text {
@@ -517,7 +518,7 @@ a {
   }
 
   .panel{
-    margin-top: 2em;
+    margin: 2em 0;
   }
 
 }
