@@ -13,7 +13,7 @@ gsap.fromTo(
     opacity: 1,
     stagger: 0.05,
     duration: 4,
-    // // delay: 7.5,
+    delay: 7.5,
     ease: "power4.out",
   }
 );
@@ -52,7 +52,6 @@ gsap.to(".intro", {
   text: introText,
   duration: 5,
   ease: "power4.inOut",
-  // delay: 7.5,
 });
 
 const yearText = "Folio 2024";
@@ -61,5 +60,4 @@ gsap.to(".year", {
   text: yearText,
   duration: 5,
   ease: "power4.inOut",
-  // delay: 7.5,
 });
