@@ -46,12 +46,13 @@ document.querySelector(".name-text").onmouseover = (event) => {
 };
 
 const introText =
-  "As a Full-Stack developer with a flair for UI/UX design, I blend technical proficiency in frontend and backend development with a keen eye for user-centric design.";
+  "As a Full Stack developer with a flair for UI/UX design, I blend technical proficiency in frontend and backend development with a keen eye for user-centric design.";
 
 gsap.to(".intro", {
   text: introText,
   duration: 5,
   ease: "power4.inOut",
+  delay: 7.5,
 });
 
 const yearText = "Folio 2024";
@@ -60,4 +61,5 @@ gsap.to(".year", {
   text: yearText,
   duration: 5,
   ease: "power4.inOut",
+  delay: 7.5,
 });

@@ -42,7 +42,7 @@ const project_container = document.querySelector(".project-container");
 
 AddCards();
 
-if (window.innerWidth >= 725) {
+if (window.innerWidth > 725) {
   let tl = gsap.timeline({
     scrollTrigger: {
       pin: true,
