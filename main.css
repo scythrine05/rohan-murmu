@@ -19,6 +19,10 @@
   user-select: none;
 }
 
+* {
+  cursor: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +36,8 @@ body {
 
 a {
   text-decoration: none;
+  cursor: none;
+  color: #fff;
 }
 
 /* Landing Styles */
@@ -47,6 +53,33 @@ a {
   overflow: hidden;
   padding: 50px;
 }
+.location-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  top: 1em;
+  padding: 14px;
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+  right: 1em;
+}
+
+.location-wrapper p {
+  font-family: "Barlow", sans-serif;
+  color: #000;
+  font-size: clamp(8px, 1vw, 1em);
+  font-weight: bold;
+}
+
+.location-icon {
+  color: #fff;
+  width: 2.5em;
+  height: 2.5em;
+}
 
 .sub-landing-text {
   font-family: "Barlow", sans-serif;
@@ -61,20 +94,19 @@ a {
 .intro {
   right: 5%;
   top: 30%;
-  font-size: 2.1vh;
+  font-size: clamp(10px, 2.1vw, 1.2em);
 }
 
 .year {
   right: 5%;
   bottom: 40%;
-  font-size: 3vh;
+  font-size: clamp(10px, 2vw, 1.5em);
   font-weight: bold;
 }
 
 .landing-text {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   transition: color 0.3s ease-in;
-  font-size: 11vh;
+  font-size: clamp(45px, 6vw, 6em);
   text-transform: uppercase;
 }
 
@@ -89,6 +121,7 @@ a {
   overflow: hidden;
   text-transform: uppercase;
   text-align: center;
+  padding: 30px;
 }
 
 .spacer > h1 {
@@ -100,15 +133,72 @@ a {
   font-family: "Raleway";
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  color: transparent;
 }
 
 /* About Section */
 
 .about-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  place-content: center;
+}
+
+.skill-wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.skill-content {
+  overflow: hidden;
+  padding: 10px;
+}
+.skill-content p {
+  font-size: clamp(3em, 6vw, 8em);
+  text-transform: uppercase;
+  color: rgb(24, 22, 22);
+  transition: 0.1s ease;
+}
+
+.skill-content img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.1s ease;
+}
+
+.skill-glow img {
+  filter: none;
+  opacity: 1;
+}
+.skill-glow .black-icon {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.skill-glow p {
+  color: #fff;
 }
 
 /* Project Section */
@@ -127,7 +217,7 @@ a {
   font-size: 30vw;
   font-weight: 999;
   text-transform: uppercase;
-  color: rgba(181, 181, 181, 0.6);
+  color: rgba(181, 181, 181, 0.1);
   white-space: nowrap;
   position: absolute;
   top: 0;
@@ -137,7 +227,7 @@ a {
 
 .panel {
   display: flex;
-  flex: 0 0 50%;
+  flex: 0 0 60rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -155,14 +245,11 @@ a {
 
 .panel-item-content-main h1 {
   font-family: "Raleway";
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  font-size: 5em;
-  transform: rotate(270deg);
+  font-size: clamp(45px, 6vw, 6em);
   font-weight: bold;
   justify-self: flex-start;
   text-transform: uppercase;
-  color: transparent;
+  color: rgba(181, 181, 181, 0.9);
 }
 
 .panel-item-content {
@@ -199,7 +286,7 @@ a {
 }
 
 .panel-text p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .panel:nth-of-type(even) .panel-item .panel-text {
@@ -268,17 +355,16 @@ a {
 }
 .get-in-touch .title {
   text-align: center;
-  font-family: "Barlow", sans-serif;
+  font-family: "Raleway";
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
-  font-size: 14vh;
+  color: rgba(181, 181, 181, 0.9);
+  font-size: clamp(45px, 6vw, 6em);
   line-height: 48px;
   padding-bottom: 48px;
 }
 
-.social-group{
-
+.social-group {
   color: #fff;
   display: flex;
   font-size: 24px;
@@ -303,7 +389,7 @@ a {
   line-height: 26px;
   font-weight: 400;
   color: #fff;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 .contact-form .input-text:focus {
   outline: none;
@@ -312,6 +398,7 @@ a {
 .contact-form .input-text.not-empty + .label {
   transform: translateY(-24px);
 }
+
 .contact-form .label {
   position: absolute;
   left: 20px;
@@ -417,27 +504,57 @@ a {
 
 /* Cursor */
 
-#cursor{
+.cursor {
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
   border-radius: 50%;
-  background-color: transparent; 
-  z-index: 999;
-  opacity: 0.5;
-  transform: translate(-50%, -50%);
   border: 2px solid #fff;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
   pointer-events: none;
+  z-index: 1000;
+}
+
+.grow,
+.grow-small {
+  transform: scale(4);
+  background: white;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small {
+  transform: scale(2);
+}
+
+.grow-rotate {
+  transform: scale(1.5);
+  mix-blend-mode: normal;
+  background: transparent;
+  mix-blend-mode: difference;
+  border: 2px dotted #fff;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(1.5) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(360deg);
+  }
 }
 
 @media (hover: none) {
   .cursor {
-     pointer-events: none;
-   }
-   #cursor{
+    pointer-events: none;
+  }
+  #cursor {
     display: none;
-   }
- }
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .intro {
@@ -453,6 +570,9 @@ a {
   .panel:nth-child(1) {
     flex-direction: column;
   }
+  .cursor {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 725px) {
@@ -461,28 +581,18 @@ a {
     height: 70vh;
   }
 
-  .landing-text {
-    font-size: 30px;
-  }
-
   .get-in-touch .title {
     font-size: 2.5em;
-  }
-
-  .intro {
-    font-size: 10px;
   }
 
   .year {
     right: 5%;
     bottom: 20%;
-    font-size: 15px;
   }
 
   .spacer > h1,
   .panel-item-content-main h1 {
-    font-size: 6vh;
-    transform: rotate(0);
+    font-size: 40px;
   }
 
   .panel-text h1 {
@@ -506,19 +616,29 @@ a {
   .contact-form .input-text,
   .contact-form .label,
   .contact-form .submit-btn {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .project-container{
+  .project-container {
     flex-direction: column;
     height: auto;
   }
-  .project-text{
+  .project-text {
     visibility: hidden;
   }
 
-  .panel{
-    margin: 2em 0;
+  .panel {
+    flex: 1;
+    margin: 2.5em 0;
   }
 
+  .location-wrapper {
+    width: 3em;
+    height: 3em;
+  }
+
+  .location-icon {
+    width: 2em;
+    height: 2em;
+  }
 }

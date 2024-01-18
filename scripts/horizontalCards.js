@@ -10,19 +10,19 @@ function AddCards() {
     <div class="panel-item-content">
     <div class="panel-text">
     <div class="panel-icons">
-    <i class="bi bi-box-arrow-up-right"></i>
+    <a href="#" class="cursor-scale rotate"><i class="bi bi-box-arrow-up-right"></i></a>
     </div>
     
     
-    <h1>Lorem Ipsum</h1>
-    <p>
+    <h1 class="cursor-scale small">Lorem Ipsum</h1>
+    <p class="cursor-scale small">
     Lorem ipsum is simple dummy text on the printing and
     typesetting industry.Lorem ipsum is simple dummy text on the printing and
     typesetting industry.Lorem ipsum is simple dummy text on the printing and
     typesetting industry.
     </p>
     <div class="panel-icons">
-    <i class="bi bi-github"></i>
+    <a href="#" class="cursor-scale rotate"><i class="bi bi-github"></i></a>
     </div>
     </div>
     <img
@@ -53,6 +53,18 @@ if (window.innerWidth >= 725) {
     },
     defaults: { ease: "none", duration: 1 },
   });
+
+  tl.to(
+    ".panel-item-content-main h1",
+    {
+      rotate: "-270deg",
+      scrollTrigger: {
+        pin: true,
+      },
+    },
+
+    0
+  );
 
   tl.to(
     ".panel",

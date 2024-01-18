@@ -13,7 +13,7 @@ gsap.fromTo(
     opacity: 1,
     stagger: 0.05,
     duration: 4,
-    delay: 7.5,
+    // // delay: 7.5,
     ease: "power4.out",
   }
 );
@@ -46,13 +46,13 @@ document.querySelector(".name-text").onmouseover = (event) => {
 };
 
 const introText =
-  "I am currently in my final year of graduation from IIIT, Gwalior pursuing Masters in Information Technology. I am a guy who does Full Stack development. I too love designing which includes illustations and digital art.";
+  "As a Full-Stack developer with a flair for UI/UX design, I blend technical proficiency in frontend and backend development with a keen eye for user-centric design.";
 
 gsap.to(".intro", {
   text: introText,
   duration: 5,
   ease: "power4.inOut",
-  delay: 7.5,
+  // delay: 7.5,
 });
 
 const yearText = "Folio 2024";
@@ -61,5 +61,5 @@ gsap.to(".year", {
   text: yearText,
   duration: 5,
   ease: "power4.inOut",
-  delay: 7.5,
+  // delay: 7.5,
 });
