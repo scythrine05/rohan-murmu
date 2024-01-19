@@ -244,11 +244,12 @@ a {
 .panel {
   display: flex;
   flex: 0 0 60rem;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   height: 100%;
 }
+
 .panel-item {
   display: flex;
   justify-content: center;
@@ -261,9 +262,9 @@ a {
 
 .panel-item-content-main h1 {
   font-family: "Raleway";
-  font-size: clamp(40px, 8vw, 6em);
+  font-size: clamp(40px, 9vw, 6em);
   font-weight: bold;
-  justify-self: flex-start;
+  text-align: center;
   text-transform: uppercase;
   color: rgba(181, 181, 181, 0.9);
 }
