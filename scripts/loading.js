@@ -101,5 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 0,
     duration: 0.5,
     delay: 7.5,
+    display: "none",
+    ease: "power1.inOut",
+  });
+
+  gsap.to(".counter", {
+    opacity: 0,
+    duration: 0.5,
+    delay: 7.5,
+    display: "none",
     ease: "power1.inOut",
   });
