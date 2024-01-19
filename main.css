@@ -39,6 +39,19 @@ a {
   cursor: none;
   color: #fff;
 }
+/* Noise Background */
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  /* you can control opacity of noise  */
+  opacity: 0.03;
+  pointer-events: none;
+  background: url("/assets/noise.gif");
+}
 
 /* Landing Styles */
 
@@ -581,8 +594,6 @@ a {
   }
 }
 
-
-
 @media only screen and (max-width: 725px) {
   .landing-container {
     padding: 30px;
@@ -624,12 +635,12 @@ a {
   .skills-wrapper {
     grid-template-columns: repeat(4, minmax(1px, auto));
   }
-  .skill-text{
+  .skill-text {
     display: none;
   }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
   .skills-wrapper {
     grid-template-columns: repeat(3, minmax(10px, auto));
   }
