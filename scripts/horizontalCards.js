@@ -1,40 +1,40 @@
 import { gsap } from "gsap";
+import { project_data } from "../data/projectData";
 
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function AddCards() {
-  const newCard = `<div class="panel">
+  const newCard = (i) => {
+    return `<div class="panel">
     <div class="panel-item">
     <div class="panel-item-content">
     <div class="panel-text">
     <div class="panel-icons">
-    <a href="#" class="cursor-scale rotate"><i class="bi bi-box-arrow-up-right"></i></a>
+    <a href="${project_data[i].plink}" class="cursor-scale rotate" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
     </div>
     
     
-    <h1 class="cursor-scale small">Lorem Ipsum</h1>
+    <h1 class="cursor-scale small">${project_data[i].pname}</h1>
     <p class="cursor-scale small">
-    Lorem ipsum is simple dummy text on the printing and
-    typesetting industry.Lorem ipsum is simple dummy text on the printing and
-    typesetting industry.Lorem ipsum is simple dummy text on the printing and
-    typesetting industry.
+    ${project_data[i].pdesc}
     </p>
     <div class="panel-icons">
-    <a href="#" class="cursor-scale rotate"><i class="bi bi-github"></i></a>
+    <a href="${project_data[i].pgithub}" class="cursor-scale rotate" target="_blank"><i class="bi bi-github"></i></a>
     </div>
     </div>
     <img
-    src="https://lvivity.com/wp-content/uploads/2020/09/ui-ux-principles.jpg"
+    src="${project_data[i].pimg}"
     alt=""
     />
     </div>
     </div>
     </div>`;
+  };
 
-  for (let i = 0; i < 4; i++) {
-    project_container.innerHTML += newCard;
+  for (let i = 0; i < project_data.length ; i++) {
+    project_container.innerHTML += newCard(i);
   }
 }
 

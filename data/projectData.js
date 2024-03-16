@@ -1,30 +1,35 @@
 const project_data = [
   {
-    itemName: "Name1",
-    itemCategory: "Category1",
-    itemLink: "Link1",
-    itemCopy:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur suscipit officiis hic, itaque commodi placeat, quas odio distinctio obcaecati vero fugiat voluptatem quaerat aliquid quasi perferendis. Obcaecati delectus fugit nulla.",
-    itemImg:
-      "https://images.pexels.com/photos/19583366/pexels-photo-19583366/free-photo-of-parrot-with-red-feathers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    pname: "Hey",
+    pdesc:
+      "Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.",
+      plink:"#",
+      pgithub:"#",
+      pimg:"https://lvivity.com/wp-content/uploads/2020/09/ui-ux-principles.jpg"
   },
   {
-    itemName: "Name2",
-    itemCategory: "Category2",
-    itemLink: "Link2",
-    itemCopy:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur suscipit officiis hic, itaque commodi placeat, quas odio distinctio obcaecati vero fugiat voluptatem quaerat aliquid quasi perferendis. Obcaecati delectus fugit nulla.",
-    itemImg:
-      "https://images.pexels.com/photos/19583366/pexels-photo-19583366/free-photo-of-parrot-with-red-feathers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    pname: "Akash Gope",
+    pdesc:
+      "A architecture protfolio made as a freelancing project with advance design and crisp animation. Developed with Basic HTML, CSS, VanillaJS and animated using GSAP. This project is open source for personal usage. ",
+      plink:"https://akash-gope.vercel.app/",
+      pgithub:"https://github.com/scythrine05/akash-gope",
+      pimg:"/assets/project_template/p2.png"
   },
   {
-    itemName: "Name3",
-    itemCategory: "Category3",
-    itemLink: "Link3",
-    itemCopy:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur suscipit officiis hic, itaque commodi placeat, quas odio distinctio obcaecati vero fugiat voluptatem quaerat aliquid quasi perferendis. Obcaecati delectus fugit nulla.",
-    itemImg:
-      "https://images.pexels.com/photos/19583366/pexels-photo-19583366/free-photo-of-parrot-with-red-feathers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    pname: "Hey",
+    pdesc:
+      "Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.",
+      plink:"#",
+      pgithub:"#",
+      pimg:"https://lvivity.com/wp-content/uploads/2020/09/ui-ux-principles.jpg"
+  },
+  {
+    pname: "Hey",
+    pdesc:
+      "Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.",
+      plink:"#",
+      pgithub:"#",
+      pimg:"https://lvivity.com/wp-content/uploads/2020/09/ui-ux-principles.jpg"
   },
 ];
 
