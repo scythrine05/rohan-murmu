@@ -1,11 +1,11 @@
 const project_data = [
   {
-    pname: "Hey",
+    pname: "MPM",
     pdesc:
-      "Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.",
-      plink:"#",
-      pgithub:"#",
-      pimg:"https://lvivity.com/wp-content/uploads/2020/09/ui-ux-principles.jpg"
+      "MPM or Majhi Pargana Mahal(a tribal NGO) is an android app where the officials publish post related to the events organized by MPM. It is coded in React Native and backed by Firebase. It is available at playstore with 100+ downloads.",
+      plink:"https://play.google.com/store/apps/details?id=com.santhal.mpm&hl=en_US",
+      pgithub:"https://github.com/scythrine05/mpm",
+      pimg:"/assets/project_template/p1.png"
   },
   {
     pname: "Akash Gope",
