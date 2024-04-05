@@ -53,33 +53,34 @@ a {
   background: url("/assets/noise.gif");
 }
 
-/* Landing Styles */
+/* Header Styles */
 
-.landing-container {
-  position: relative;
+header{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: rgba(181, 181, 181, 0.9);
-  height: 100vh;
-  overflow: hidden;
-  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
 }
 
+.logo-wrapper img {
+  object-fit: cover;
+  width: clamp(1.5em, 4vw, 3em);
+  height: auto;
+}
+
+
 .location-wrapper {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background-color: #fff;
-  top: 1em;
   padding: 14px;
   width: clamp(3em, 6vw, 5em);
   height: clamp(3em, 6vw, 5em);
   border-radius: 100%;
-  right: 1em;
 }
 
 .location-wrapper p {
@@ -94,6 +95,21 @@ a {
   width: clamp(1em, 4vw, 2.5em);
   height: auto;
 }
+
+/* Landing Styles */
+
+.landing-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgba(181, 181, 181, 0.9);
+  height: 100vh;
+  overflow: hidden;
+  padding: 50px;
+}
+
 
 .sub-landing-text {
   font-family: "Barlow", sans-serif;
