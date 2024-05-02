@@ -12,7 +12,11 @@ function AddCards() {
     <div class="panel-item-content">
     <div class="panel-text">
     <div class="panel-icons">
-    <a href="${project_data[i].plink}" class="cursor-scale rotate" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+    ${
+      project_data[i].plink
+        ? `<a href="${project_data[i].plink}" class="cursor-scale rotate" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>`
+        : ""
+    }
     </div>
     
     
@@ -21,7 +25,9 @@ function AddCards() {
     ${project_data[i].pdesc}
     </p>
     <div class="panel-icons">
-    <a href="${project_data[i].pgithub}" class="cursor-scale rotate" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="${
+      project_data[i].pgithub
+    }" class="cursor-scale rotate" target="_blank"><i class="bi bi-github"></i></a>
     </div>
     </div>
     <img
@@ -33,7 +39,7 @@ function AddCards() {
     </div>`;
   };
 
-  for (let i = 0; i < project_data.length ; i++) {
+  for (let i = 0; i < project_data.length; i++) {
     project_container.innerHTML += newCard(i);
   }
 }

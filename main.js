@@ -8,6 +8,7 @@ import "./scripts/landingText";
 import "./scripts/marqueeText";
 // import "./scripts/splitScreen";
 import "./scripts/horizontalCards";
+import "./scripts/email";
 
 var textboxes = document.querySelectorAll(".input-text");
 
@@ -57,7 +58,6 @@ cursorScale.forEach((link) => {
     } else if (link.classList.contains("rotate")) {
       cursor.classList.remove("grow");
       cursor.classList.add("grow-rotate");
-      console.log("hello");
     }
   });
 

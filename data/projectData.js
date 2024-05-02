@@ -1,10 +1,10 @@
 const project_data = [
   {
-    pname: "MPM",
+    pname: "Tukkit",
     pdesc:
-      "MPM or Majhi Pargana Mahal(a tribal NGO) is an android app where the officials publish post related to the events organized by MPM. It is coded in React Native and backed by Firebase. It is available at playstore with 100+ downloads.",
-      plink:"https://play.google.com/store/apps/details?id=com.santhal.mpm&hl=en_US",
-      pgithub:"https://github.com/scythrine05/mpm",
+      "Tukkit a cross platform application with one swipe news feature with interactive UI/UX. It is coded in React native with Firebase as backend. You can download from the website.",
+      plink:"https://tukkit.vercel.app/",
+      pgithub:"https://github.com/scythrine05/tukkit-mobile",
       pimg:"/assets/project_template/p1.png"
   },
   {
@@ -16,20 +16,19 @@ const project_data = [
       pimg:"/assets/project_template/p2.png"
   },
   {
-    pname: "Hey",
+    pname: "MPM",
     pdesc:
-      "Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.",
-      plink:"#",
-      pgithub:"#",
-      pimg:"https://lvivity.com/wp-content/uploads/2020/09/ui-ux-principles.jpg"
+      "MPM or Majhi Pargana Mahal(a tribal NGO) is an android app where the officials publish post related to the events organized by MPM. It is coded in React Native and backed by Firebase.",
+      pgithub:"https://github.com/scythrine05/mpm",
+      pimg:"/assets/project_template/p3.png"
   },
   {
-    pname: "Hey",
+    pname: "Betconx",
     pdesc:
-      "Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.Lorem ipsum is simple dummy text on the printing and typesetting industry.",
-      plink:"#",
-      pgithub:"#",
-      pimg:"https://lvivity.com/wp-content/uploads/2020/09/ui-ux-principles.jpg"
+      "Betconx is the User Interface of a betting application coded in React with responsive design.",
+      plink:"https://betconx-intern.vercel.app/",
+      pgithub:"https://github.com/scythrine05/Betconx-Intern",
+      pimg:"/assets/project_template/p4.png"
   },
 ];
 
