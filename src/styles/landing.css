@@ -1,0 +1,44 @@
+.landing-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgba(181, 181, 181, 0.9);
+  height: 100vh;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.sub-landing-text {
+  font-family: "Barlow", sans-serif;
+}
+
+.intro,
+.year {
+  position: absolute;
+  width: 30vw;
+}
+
+.intro {
+  right: 5%;
+  top: 30%;
+  font-size: clamp(11px, 2.1vw, 1.2em);
+}
+
+.year {
+  right: 5%;
+  bottom: 40%;
+  font-size: clamp(14px, 2.5vw, 1.5em);
+  font-weight: bold;
+}
+
+.landing-text {
+  transition: color 0.3s ease-in;
+  font-size: clamp(40px, 8vw, 6em);
+  text-transform: uppercase;
+}
+
+.name-text:hover {
+  color: #fff;
+}

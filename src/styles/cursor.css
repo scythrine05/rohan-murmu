@@ -1,0 +1,51 @@
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow,
+.grow-small {
+  transform: scale(4);
+  background: white;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small {
+  transform: scale(2);
+}
+
+.grow-rotate {
+  transform: scale(1.5);
+  mix-blend-mode: normal;
+  background: transparent;
+  mix-blend-mode: difference;
+  border: 2px dotted #fff;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(1.5) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+
+@media (hover: none) {
+  .cursor {
+    pointer-events: none;
+  }
+  #cursor {
+    display: none;
+  }
+}

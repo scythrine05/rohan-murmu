@@ -1,0 +1,20 @@
+.spacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 100px;
+}
+
+.spacer > h1 {
+  position: absolute;
+  color: transparent;
+  width: 500vw;
+  font-size: clamp(40px, 8vw, 6em);
+  font-weight: 900;
+  font-family: "Raleway";
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
