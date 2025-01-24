@@ -84,3 +84,9 @@
   background-color: #fff;
   color: #000;
 }
+
+@media only screen and (max-width: 725px) {
+  .row .col.x-50 {
+    width: 100%;
+  }
+}

@@ -42,3 +42,16 @@
 .name-text:hover {
   color: #fff;
 }
+
+@media only screen and (max-width: 1024px) {
+  .intro {
+    left: 5%;
+    top: 20%;
+    width: 80%;
+  }
+
+  .year {
+    right: 5%;
+    bottom: 20%;
+  }
+}

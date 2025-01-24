@@ -6,12 +6,12 @@
   height: 100vh;
   color: #b5b5b5cc;
   font-family: "Lexend Deca";
-  font-size: 1.2rem;
+  font-size: clamp(14px, 2vw, 1em);
   text-transform: uppercase;
 }
 
 .spinner {
-  font-size: 2rem;
+  font-size: clamp(20px, 2vw, 1.5em);
   animation: spin 1s linear infinite;
 }
 
