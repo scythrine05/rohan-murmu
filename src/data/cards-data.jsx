@@ -13,7 +13,7 @@ import { MdAdminPanelSettings } from "react-icons/md";
 
 const cardsData = [
   {
-    image: "src/assets/projects/devtation.webp",
+    image: "/src/assets/projects/devtation.webp",
     cardLink: "https://devtation.rohanworks.com",
     githubLink: "https://github.com/scythrine05/Devtation-client",
     icons: [
@@ -39,7 +39,7 @@ const cardsData = [
     ],
   },
   {
-    image: "src/assets/projects/bindboard.webp",
+    image: "/src/assets/projects/bindboard.webp",
     cardLink: "https://bindboard.rohanworks.com",
     githubLink: "https://github.com/scythrine05/bindboard",
     icons: [
@@ -63,7 +63,7 @@ const cardsData = [
     ],
   },
   {
-    image: "src/assets/projects/portfolio.webp",
+    image: "/src/assets/projects/portfolio.webp",
     cardLink: "https://www.rohanworks.com/",
     githubLink: "https://github.com/scythrine05/rohan-murmu",
     icons: [
@@ -86,7 +86,7 @@ const cardsData = [
     ],
   },
   {
-    image: "src/assets/projects/tukkit.webp",
+    image: "/src/assets/projects/tukkit.webp",
     cardLink: "https://tukkit.rohanworks.com",
     githubLink: "https://github.com/scythrine05/tukkit-mobile",
     icons: [
