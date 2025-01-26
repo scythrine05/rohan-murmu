@@ -42,13 +42,13 @@
 
 .skill-content img {
   object-fit: cover;
-  width: clamp(2em, 4vw, 4em);
+  width: clamp(2em, 4vw, 3em);
   height: auto;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.5;
   transition: filter 0.1s ease;
-  margin: 0 2px;
+  margin: 0 5px;
 }
 
 .each-skill-wrapper:hover .skill-content img {

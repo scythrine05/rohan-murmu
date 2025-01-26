@@ -14,7 +14,7 @@ const Projects = () => {
       </div>
       <div className="cards-layout">
         {cardsData.map((card, index) => (
-          <Card key={index} image={card.image} icons={card.icons} />
+          <Card key={index} image={card.image} icons={card.icons} link={card.cardLink} githubLink={card.githubLink} />
         ))}
       </div>
     </div>

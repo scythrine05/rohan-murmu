@@ -3,17 +3,17 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
 
-const Card = ({ image, icons }) => {
+const Card = ({ image, icons, link, githubLink }) => {
   return (
     <div className="card">
       <div className="card-image">
         <img src={image} alt="Card visual" />
       </div>
       <div className="card-buttons">
-        <a href="/" className="link-btn">
+        <a href={link} className="link-btn" target="_blank">
           <LuExternalLink size={20} />
         </a>
-        <a href="/" className="link-btn">
+        <a href={githubLink} className="link-btn" target="_blank">
           <FaGithub size={20} />
         </a>
       </div>
