@@ -13,7 +13,7 @@ Check out the live version of my portfolio here:
 
 ## Technologies Used
 
-- **Frontend**: React, Vite, GSAP (for animations).
+- **Frontend**: React, Vite Bundler, GSAP (for animations).
 - **Styling**: CSS (custom styles).
 - **Backend Integration**: Firebase (for the contact form).
 
