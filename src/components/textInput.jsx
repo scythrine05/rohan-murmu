@@ -1,6 +1,13 @@
 import React, { useEffect, useRef } from "react";
 
-export default function TextInput({ name, label, required, value, onChange }) {
+export default function TextInput({
+  name,
+  label,
+  type,
+  required,
+  value,
+  onChange,
+}) {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -27,7 +34,7 @@ export default function TextInput({ name, label, required, value, onChange }) {
         ref={inputRef}
         id={name}
         className="input-text js-input"
-        type="text"
+        type={type}
         name={name}
         required={required}
         value={value}

@@ -48,6 +48,7 @@ export default function Contact() {
         <TextInput
           name="name"
           label="Name"
+          type="text"
           required
           value={formData.name}
           onChange={handleChange}
@@ -55,6 +56,7 @@ export default function Contact() {
         <TextInput
           name="email"
           label="Email"
+          type="email"
           required
           value={formData.email}
           onChange={handleChange}
@@ -62,6 +64,7 @@ export default function Contact() {
         <TextInput
           name="message"
           label="Message"
+          type="text"
           required
           value={formData.message}
           onChange={handleChange}
