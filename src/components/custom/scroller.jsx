@@ -9,7 +9,7 @@ export default function Scroller() {
     if (scrollingTextRef.current) {
       gsap.to(scrollingTextRef.current, {
         x: "-100vw",
-        duration: 5,
+        duration: 10,
         repeat: -1,
         ease: "linear",
       });
@@ -20,7 +20,7 @@ export default function Scroller() {
     <section className="spacer">
       <h1 id="scrollingText" ref={scrollingTextRef}>
         ui/ux frontend backend mobile devops cloud ui/ux frontend backend mobile
-        cloud
+        cloud ui/ux frontend backend mobile devops
       </h1>
     </section>
   );
